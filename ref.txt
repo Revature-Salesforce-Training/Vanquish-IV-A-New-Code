@@ -1,0 +1,4 @@
+GENIUS API info
+Client ID- XApDOS_VY-DjuC1KXD1Lq5hx5wyVGrLrxS_tn1ze6EBe66oRzL3Kl-mHpA0rjjDa
+CLient Secret- 3emcDfdzyrMX377P1sj9KJJUtLaqSeaWeEBYKvD1hug-C-CojO8HhNrj_W1IoWxRZCgxwVlVIRZBlLiDYPt9Yg
+Client Access Token- HLfDkcRlb7zhMP8tSJV1EfT-1X1v8pey0KLBQF5W6DzyXDbePaAcKp01ZdHIqZqi

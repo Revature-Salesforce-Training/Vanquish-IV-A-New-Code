@@ -1,12 +1,51 @@
-<!doctype html>
+<!--
+    Author: Joshua Scilex
+    last updated: 4/29/22
+    Description: "In Living Color," a hex-based color-guessing game
+-->
+
+
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Guess the Color</title>
-        <meta name="description" content="guessing randomized hex code using API">
+        <title>In Living Color</title>
+        <meta name="description" content="A color-guessing game">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+        <script type="text/javascript" src="assets/scripts/index.js" defer></script>
     </head>
     <body>
-        <a>What color am I thinking of?</a>
+        <header>
+            <nav>
+                <a class="navItem" href="index.html">Home</a>
+                <a class="navItem" href="about.html">About</a>
+            </nav>
+        </header>
+        <div>
+            <h1>In Living Color</h1>
+            <p>A color-guessing game</p>
+        </div>
+        <div>
+            <p>Use the color picker to select a color</p>
+        </div>
+        <div id="picker">
+            
+        </div>
+
+        <!-- display hex code -->
+        <button id="submit">SUBMIT</button>
+
+        <div>
+            <h2>Current Guess:</h2>
+            <p>past guesses</p>
+        </div>
+        <footer>
+            <nav>
+                <a class="navItem" href="index.html">Home</a>
+                <a class="navItem" href="about.html">About</a>
+            </nav>
+        </footer>
     </body>
 </html>
