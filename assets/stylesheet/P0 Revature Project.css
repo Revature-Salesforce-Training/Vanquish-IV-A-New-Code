@@ -1,51 +1,85 @@
 /* 
    Author: Carl Tullis
-    Last Updated: 4/29/2022
+    Last Updated: 4/30/2022
     Description: P0 project CSS
     
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tapestry&family=Water+Brush&display=swap');
 
+/* 
+Global CSS
+*/
+
 *{
     padding: 0px;
     margin: 0px;
 }
-#timelinePicture{
-    width: 50%;
-    height: 50%;
-}
+
 html{
     font-family: 'Water Brush', 'Tapestry', sans-serif;
 }
+
 #logo{
     width: 30%;
     height: 30%;
 }
+
+/* 
+The First Block of the page
+*/
+
 #header{
     font-size: 40px;
     background-color: #B33030;
 }
-#directory{
+
+#nav{
     background-color: #164766;
     padding: 0;
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: none;
-}
-#historySection{
-    background-color: white;
-    
+    content: '';
+    display: block;
+    clear: both;
 }
 
-#header, #directory, .historyHeading, #historyLogo, #popularHeading{
+.navItems{
+    background-color: #FFCC12;
+    border-radius: 30px;
+    width: 25%;
+    color: #B33030;
+    float: left;
+}
+
+/* 
+History Section
+*/
+
+#header, .historyHeading, #historyLogo, #popularHeading{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;    
 }
-#historyLogo{
-    width: 25%;
-    height: 25%;
+
+#timelinePicture{
+    width: 50%;
+    height: 50%;
 }
+
+#historyHeading{
+    font-size: 50px;
+}
+
+#historyContent{
+    display: flex;
+    font-size: 30px;
+}
+
+/* 
+Martial Arts Selector Section
+*/
+
 #popularMartialArts{
     background-color: #1E79B3;
     color: #FFCC12;
@@ -58,20 +92,21 @@ html{
     width: 50px;
 }
 
-#historyContent{
-    display: flex;
-    font-size: 30px;
-}
-
+/* 
+Favorite Fighters Section
+*/
 
 #famousFighters{
-    background-color: #B3B142;
-    
-    
+    background-color: #B3B142;    
 }
+
 .famous{
     width: 18vw;
     height: 25%;
-    display: flex;
-    flex-direction: row;
+}
+
+.topFive{
+    width: 20%;
+    position: relative;
+    clear: both;
 }

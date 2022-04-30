@@ -3,6 +3,8 @@
 // Description: P0 project JavaScript
 
 
+//Martial Art Selector Program
+
 const karate = document.querySelector('#karatePic');
 const muayThai = document.querySelector('#muayThaiPic');
 const brazilJiu = document.querySelector('#brazilJiuPic');
@@ -74,74 +76,86 @@ function pickTKD(){
     aikido.classList.add('pic');
 }
 function pickNinjutsu(){
-    karate.classList.add('pic')
-    muayThai.classList.add('pic')
-    brazilJiu.classList.add('pic')
-    kungFu.classList.add('pic')
-    judo.classList.add('pic')
-    taekwondo.classList.add('pic')
-    ninjutsu.classList.toggle('pic')
-    jujutsu.classList.add('pic')
-    kravMaga.classList.add('pic')
-    aikido.classList.add('pic')
+    karate.classList.add('pic');
+    muayThai.classList.add('pic');
+    brazilJiu.classList.add('pic');
+    kungFu.classList.add('pic');
+    judo.classList.add('pic');
+    taekwondo.classList.add('pic');
+    ninjutsu.classList.toggle('pic');
+    jujutsu.classList.add('pic');
+    kravMaga.classList.add('pic');
+    aikido.classList.add('pic');
 }
 function pickKravMaga(){
-    karate.classList.add('pic')
-    muayThai.classList.add('pic')
-    brazilJiu.classList.add('pic')
-    kungFu.classList.add('pic')
-    judo.classList.add('pic')
-    taekwondo.classList.add('pic')
-    ninjutsu.classList.add('pic')
-    jujutsu.classList.add('pic')
-    kravMaga.classList.toggle('pic')
-    aikido.classList.add('pic')
+    karate.classList.add('pic');
+    muayThai.classList.add('pic');
+    brazilJiu.classList.add('pic');
+    kungFu.classList.add('pic');
+    judo.classList.add('pic');
+    taekwondo.classList.add('pic');
+    ninjutsu.classList.add('pic');
+    jujutsu.classList.add('pic');
+    kravMaga.classList.toggle('pic');
+    aikido.classList.add('pic');
 }
 function pickAikido(){
-    karate.classList.add('pic')
-    muayThai.classList.add('pic')
-    brazilJiu.classList.add('pic')
-    kungFu.classList.add('pic')
-    judo.classList.add('pic')
-    taekwondo.classList.add('pic')
-    ninjutsu.classList.add('pic')
-    jujutsu.classList.add('pic')
-    kravMaga.classList.add('pic')
-    aikido.classList.toggle('pic')
+    karate.classList.add('pic');
+    muayThai.classList.add('pic');
+    brazilJiu.classList.add('pic');
+    kungFu.classList.add('pic');
+    judo.classList.add('pic');
+    taekwondo.classList.add('pic');
+    ninjutsu.classList.add('pic');
+    jujutsu.classList.add('pic');
+    kravMaga.classList.add('pic');
+    aikido.classList.toggle('pic');
 }
 function pickJudo(){
-    karate.classList.add('pic')
-    muayThai.classList.add('pic')
-    brazilJiu.classList.add('pic')
-    kungFu.classList.add('pic')
-    judo.classList.toggle('pic')
-    taekwondo.classList.add('pic')
-    ninjutsu.classList.add('pic')
-    jujutsu.classList.add('pic')
-    kravMaga.classList.add('pic')
-    aikido.classList.add('pic')
+    karate.classList.add('pic');
+    muayThai.classList.add('pic');
+    brazilJiu.classList.add('pic');
+    kungFu.classList.add('pic');
+    judo.classList.toggle('pic');
+    taekwondo.classList.add('pic');
+    ninjutsu.classList.add('pic');
+    jujutsu.classList.add('pic');
+    kravMaga.classList.add('pic');
+    aikido.classList.add('pic');
 }
 function pickKungFu(){
-    karate.classList.add('pic')
-    muayThai.classList.add('pic')
-    brazilJiu.classList.add('pic')
-    kungFu.classList.toggle('pic')
-    judo.classList.add('pic')
-    taekwondo.classList.add('pic')
-    ninjutsu.classList.add('pic')
-    jujutsu.classList.add('pic')
-    kravMaga.classList.add('pic')
-    aikido.classList.add('pic')
+    karate.classList.add('pic');
+    muayThai.classList.add('pic');
+    brazilJiu.classList.add('pic');
+    kungFu.classList.toggle('pic');
+    judo.classList.add('pic');
+    taekwondo.classList.add('pic');
+    ninjutsu.classList.add('pic');
+    jujutsu.classList.add('pic');
+    kravMaga.classList.add('pic');
+    aikido.classList.add('pic');
 }
 function pickJujutsu(){
-    karate.classList.add('pic')
-    muayThai.classList.add('pic')
-    brazilJiu.classList.add('pic')
-    kungFu.classList.add('pic')
-    judo.classList.add('pic')
-    taekwondo.classList.add('pic')
-    ninjutsu.classList.add('pic')
-    jujutsu.classList.toggle('pic')
-    kravMaga.classList.add('pic')
-    aikido.classList.add('pic')
+    karate.classList.add('pic');
+    muayThai.classList.add('pic');
+    brazilJiu.classList.add('pic');
+    kungFu.classList.add('pic');
+    judo.classList.add('pic');
+    taekwondo.classList.add('pic');
+    ninjutsu.classList.add('pic');
+    jujutsu.classList.toggle('pic');
+    kravMaga.classList.add('pic');
+    aikido.classList.add('pic');
 }
+
+//Chuck Norris Fetch API
+
+// document.querySelector('#jokeBtn').addEventListener('click', fetchJoke);
+
+// function fetchJoke(category) {
+//     fetch(`https://api.chucknorris.io/jokes/random?category=${category}`);
+//     .then(r => r.json())
+//     .then(res => console.log(res.value));
+
+
+//   }

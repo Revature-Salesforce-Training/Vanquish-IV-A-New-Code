@@ -1,6 +1,6 @@
 <!-- 
     Author: Carl Tullis
-    Last Updated: 4/29/2022
+    Last Updated: 4/30/2022
     Description: P0 project HTML
     
  -->
@@ -16,18 +16,17 @@
     <script src="assets/scripts/P0 Revature Project.js" defer></script>
 </head>
 <body>
+    <nav id="nav">
+        <ol>
+            <li><a class="navItems" href="#historySection">History of Martial Arts</a></li>
+            <li><a class="navItems" href="#popularMartialArts">Popular Martial Arts of Today</a></li>
+            <li><a class="navItems" href="#famousFighters">Favorite Martial Artists</a> </li>
+        </ol>
+    </nav>
     <header id="header">
         <img id="logo" src="assets/pictures/martial arts logo.jpg" alt="Site Logo">
         <h1>Martial Arts</h1>
     </header>
-    <div id="directory">
-        <h2>Website Directory</h2>
-        <ol>
-            <li><a href="#historySection">History of Martial Arts</a></li>
-            <li><a href="#popularMartialArts">Popular Martial Arts of Today</a></li>
-            <li><a href="#famousFighters">Famous Martial Artists</a> </li>
-        </ol>
-    </div>
     <section id="historySection" >
         <h2 class="historyHeading">Brief History of Martial</h2>
         <div id="historyContent">
@@ -92,31 +91,31 @@
             </section>
         </section>
     <section id="famousFighters">
-        <h2></h2>
-        <div>
+        <h2>My Top Five Favorite Martial Artists</h2>
+        <div class="topFive">
             <img class="famous" src="assets/pictures/MuhammadAli.jpg" alt="Muhammad Ali picture">
             <span>Muhammad Ali</span>
         </div>
-        <div>
+        <div class="topFive">
             <img class="famous" src="assets/pictures/brucelee.jpg" alt="Bruce Lee Picture">
             <span>Bruce Lee</span>
         </div>
-        <div>
+        <div class="topFive">
             <img class="famous" src="assets/pictures/chucknorris.jpg" alt="Chuck Norris Picture">
             <span>Chuck Norris</span>
         </div>
-        <div>
+        <div class="topFive">
             <img class="famous" src="assets/pictures/tonyjaa.jpg" alt="Tony Jaa Picture">
             <span>Tony Jaa</span>
         </div>
-        <div>
+        <div class="topFive">
             <img class="famous" src="assets/pictures/michaeljaiwhite.jpg" alt="Michael Jai White">
             <span>Michael Jai White</span>
         </div>
     </section>
     <section id="jokeBin">
-        
         <button id="jokeBtn">Chuck Norris Jokes</button>
+        <div id="jokeBin"></div>
     </section>
 </body>
 </html>
