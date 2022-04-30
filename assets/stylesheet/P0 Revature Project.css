@@ -1,0 +1,62 @@
+/* 
+   Author: Carl Tullis
+    Last Updated: 4/29/2022
+    Description: P0 project CSS
+    
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tapestry&family=Water+Brush&display=swap');
+
+html{
+    font-family: 'Water Brush', 'Tapestry', sans-serif;
+}
+#logo{
+    width: 30%;
+    height: 30%;
+}
+#header{
+    font-size: 40px;
+    background-color: #B33030;
+}
+#directory{
+    background-color: #164766;
+    padding: 0;
+    font-size: 30px;
+    text-decoration: none;
+}
+#historySection{
+    background-color: white;
+    
+}
+#header, #directory, .historyHeading, #historyLogo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;    
+}
+#historyLogo{
+    width: 25%;
+    height: 25%;
+}
+#popularMartialArts{
+    background-color: #1E79B3;
+}
+
+#historyContent{
+    display: flex;
+    font-size: 30px;
+}
+
+#timelinePicture{
+    width: 50%;
+    height: 50%;
+}
+#famousFighters{
+    background-color: #B3B142;
+    display: block;
+    
+}
+.famous{
+    width: 18vw;
+    height: 20%;
+    flex-direction: row;
+}
