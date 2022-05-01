@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Original+Surfer&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="scripts/index.js">
+        <script src="scripts/index.js" defer></script>
         <title>Surfing Dude</title>
     </head>
 
@@ -97,14 +98,38 @@
                     </tbody>
                 </table>
                 <div class="links">
-                    <a class="link1" href="https://www.youtube.com/watch?v=KCLWvAcPcPk">Beginner Tutorial</a>
-                    <a href="https://www.kapowui.com/">Surfing Lessons</a>    
+                    <a class="link link1" href="https://www.youtube.com/watch?v=KCLWvAcPcPk">Beginner Tutorial</a>
+                    <a class="link link2" href="https://www.kapowui.com/">Surfing Lessons</a>    
                 </div>
             </div>
         </div>
 
         <!-- Check the weather for surfing using the API link -->
        
-        <footer></footer>
+        <footer>
+            <div class="weather-container">
+                <div>
+                    <h3 class="weather-title">Check The Weather</h3>
+                </div>
+                <div>
+                    <img class="surf-weather2" src="assets/images/surf-weather2.jpg" alt="Surf Weather pic">
+                </div>  
+                <div>
+                    <p>Find the current weather now! Results will display below</p>
+                    <form class="api-search">
+                        <label for="cityname">City</label>
+                        <input id="cityID" type="text" name="cityname">
+                        <label for="statename">Country</label>
+                        <input id="countryID" type="text" name="statename">
+                        <button type="button" id="search-button">Search</button>
+                    </form>
+                </div>
+                
+                <div class="search-results-div">
+                    <p class="search-results"></p>
+                </div>
+            </div>
+                
+        </footer>
     </body>
 </html>

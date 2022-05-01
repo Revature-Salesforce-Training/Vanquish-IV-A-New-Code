@@ -13,7 +13,7 @@ h3{
     font-family: 'Original Surfer', cursive;
 }
 
-p {
+p, form {
     font-family: 'Josefin Sans', sans-serif;
     line-height: 20px;
 }
@@ -33,6 +33,10 @@ table {
 table, th, td, tr {
     border: 1px solid;
   }
+
+input {
+    outline: none;
+}
 
 /*---------------------- Header ------------------------- */
 
@@ -58,6 +62,16 @@ table, th, td, tr {
     background-color: #51F0A6;
 }
 
+@media (max-width: 874px) {
+    .history-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #51F0A6;
+    }
+}
+
 .history{
     display: flex;
     flex-direction: column;
@@ -69,11 +83,35 @@ table, th, td, tr {
     margin-left: 10%;
 }
 
+@media (max-width: 874px) {
+    .history{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-right: 7%;
+        
+    }
+}
+
+
 .history-image{
     display: inline-block;
     margin-right: 5%;
     
  
+}
+
+@media (max-width: 874px) {
+    .history-image{
+        display: inline-block;
+        margin-left: 50px;
+        margin-bottom: 70px;
+     
+    }
 }
 
 
@@ -87,6 +125,16 @@ table, th, td, tr {
     background-color: #51E1F0;
 }
 
+@media (max-width: 874px) {
+    .fun-fact-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #51E1F0;
+    }
+}
+
 .ff-title{
     margin-left: 40px;
 }
@@ -96,6 +144,15 @@ table, th, td, tr {
     display: inline-block;
     border-radius: 100%;
     margin-left: 150px;
+}
+
+@media (max-width: 874px){
+    .surf-dude{
+        height: 400px;
+        margin-right: 140px;
+        margin-top: 100px;
+       
+    }
 }
 
 .fun-facts{
@@ -116,6 +173,16 @@ table, th, td, tr {
     justify-content: space-between;
     align-items: center;
     background-color: #4EE674;
+}
+
+@media (max-width: 874px){
+    .get-started-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #4EE674;
+    }
 }
 
 .h3-get-started{
@@ -143,9 +210,64 @@ table, th, td, tr {
 
 .links{
     margin-top: 20px;
+
+}
+
+.link{
+    color: blue;
+    text-decoration: none;
 }
 
 .link1{
     margin-right: 10px;
-    
+
 }
+
+.link2{
+
+}
+
+/*---------------------- Check the Weather ------------------------- */
+
+.weather-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #55D8C1;
+}
+
+.weather-title{
+    margin-top: 10vh;
+    margin-bottom: 10h;
+}
+
+.surf-weather2{
+    width: 500px;
+    height: 350px;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+}
+
+.api-search{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+
+
+#search-button{
+    color: white;
+}
+
+.search-results-div{
+    margin-bottom: 5vh;
+}
+
+.search-results{
+    color: black;
+}
+
+
+    
