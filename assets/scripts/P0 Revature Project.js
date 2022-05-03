@@ -150,26 +150,20 @@ function pickJujutsu(){
 
 //Chuck Norris Fetch API
 
-// let jokeBtn = document.querySelector('#jokeBtn');
-// let jokeBin = document.querySelector('#jokeBin');
 
-// jokeBtn.addEventListener('click', jokeBtn);
+let jokeBtn = document.querySelector('#jokeBtn')
+jokeBtn.addEventListener('click', makeJoke);
 
-// async function jokeBin(){
+async function makeJoke(){
 
-//     let fetchdata = await fetch('https://api.chucknorris.io/jokes/random');
-//     let parsedFetchData = await fetchdata.json();
-//     let p = document.createElement('p');
-//     p.src = parsedFetchData.message;
-//     results.appendChild(p);
-// }
+    let category = document.querySelector('#search').value;
+    let fetchdata = await fetch(`https://api.chucknorris.io/jokes/random?category=${category}`);
+    let parsedFetchData = await fetchdata.json();
+    console.log(parsedFetchData);
+    let searchResults = document.querySelector('#joke');
+    searchResults.innerHTML = '';
+    searchResults.innerHTML = parsedFetchData.value;
+}
 
-// fetch ('https://api.chucknorris.io/jokes/random')
-// 	.then(response => 
-//         response.json())
-// 	.then(response => 
-//         console.log(response))
-// 	.catch(err => 
-//         console.error(err))
-//     let p = document.createElement('p');
-    // p.src = err.value;
+
+
