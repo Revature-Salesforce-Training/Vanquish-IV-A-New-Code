@@ -145,6 +145,7 @@ Media Queries
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        font-size: 30px;
     }
     
     #popularMartialArts, #famousFighters, .navItems, #header, #nav{
