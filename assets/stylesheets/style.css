@@ -1,0 +1,78 @@
+/* 
+Author: Joshua Scilex
+Created: 4/28/22
+last updated: 5/2/22
+Description: "In Living Color," an API-based color-guessing game 
+*/
+
+
+body {
+    padding-top: 10px;
+    background: #006778;
+    color: #00AFC1;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+.navItem {
+    text-decoration:none;
+    color:#FFD124;
+    background-color: #006778;
+    padding: 5px 13px 5px 13px;
+    border:3px solid #00AFC1;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.title {
+    align-items: center;
+    background-color: #00343e;
+    padding: 1px 0px 5px 0px;
+    border-radius: 20px;
+}
+
+#picker {
+    align-items: center;
+    /* background-color: #00343e; */
+    padding: 5px 300px 20px 200px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.lastResult {
+    padding: 3px;
+    border-radius: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column-reverse;
+    list-style: none;
+    background-color: #00343e;
+    padding: 5px 50px;
+    border-radius: 20px;
+}
+
+li {
+    color: white;
+	font-size: 34px;
+	text-shadow: 0px 0px 3px black;
+    border-radius: 10px;
+    margin: 3px;
+
+}
+
+.lastResult {
+    color: white;
+	font-size: 34px;
+	text-shadow: 0px 0px 3px black;
+}

@@ -1,8 +1,10 @@
-<!--
+<!-- 
     Author: Joshua Scilex
-    last updated: 4/29/22
-    Description: "In Living Color," a hex-based color-guessing game
+    Created: 4/28/22
+    last updated: 5/2/22
+    Description: "In Living Color," an API-based color-guessing game 
 -->
+
 
 
 <!DOCTYPE html>
@@ -14,38 +16,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
         <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
-        <script type="text/javascript" src="assets/scripts/index.js" defer></script>
+        <script type="text/javascript" src="assets/scripts/index2.js" defer></script>
     </head>
     <body>
         <header>
-            <nav>
+            <nav> 
                 <a class="navItem" href="index.html">Home</a>
                 <a class="navItem" href="about.html">About</a>
             </nav>
+            <nav id="difficulty">
+                <a class="navItem" href="index.html">Easy</a>
+                <a class="navItem" href="medium.html">Medium</a>
+                <a class="navItem" href="hard.html">Hard</a>
+            </nav>
         </header>
-        <div>
+        <div class="title">
             <h1>In Living Color</h1>
             <p>A color-guessing game</p>
         </div>
-        <div>
+  
+        <div id="picker">
             <p>Use the color picker to select a color</p>
         </div>
-        <div id="picker">
-            
-        </div>
 
-        <!-- display hex code -->
         <button id="submit">SUBMIT</button>
 
-        <div>
-            <h2>Current Guess:</h2>
-            <p>past guesses</p>
+        <p class="lastResult"></p>
+        
+        <div id="guessTracker">
+            <h2>Guesses:</h2>
+            <ul reversed class="guesses">
+                <li class="list"></li>
+            </ul>
+
+            <div id="currentGuessEnd"></div>
+
+
         </div>
-        <footer>
-            <nav>
-                <a class="navItem" href="index.html">Home</a>
-                <a class="navItem" href="about.html">About</a>
-            </nav>
-        </footer>
     </body>
 </html>
