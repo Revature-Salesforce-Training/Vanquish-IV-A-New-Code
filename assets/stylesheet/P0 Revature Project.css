@@ -1,6 +1,6 @@
 /* 
    Author: Carl Tullis
-    Last Updated: 4/30/2022
+    Last Updated: 5/3/2022
     Description: P0 project CSS
     
 */
@@ -11,28 +11,36 @@ Global CSS
 */
 
 *{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0px;
-    margin: 0px;
+    margin: 0px;    
 }
 
 html{
-    font-family: 'Water Brush', 'Tapestry', sans-serif;
-}
-
-#logo{
-    width: 30%;
-    height: 30%;
+    font-family: 'Tapestry', sans-serif;
 }
 
 /* 
 The First Block of the page
 */
 
+#logo{
+    width: 30%;
+    height: 30%;
+}
+
 #header{
     font-size: 40px;
     background-color: #B33030;
+    width: 100%;
 }
 
+/* 
+Page Navigation
+*/
 #nav{
     background-color: #164766;
     padding: 0;
@@ -40,27 +48,17 @@ The First Block of the page
     text-decoration: none;
     content: '';
     display: block;
-    clear: both;
+    width: 100%;
 }
 
 .navItems{
-    background-color: #FFCC12;
-    border-radius: 30px;
-    width: 25%;
-    color: #B33030;
-    float: left;
+    width: 100%;
+    color: #FFCC12;
 }
 
 /* 
 History Section
 */
-
-#header, .historyHeading, #historyLogo, #popularHeading{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;    
-}
 
 #timelinePicture{
     width: 50%;
@@ -68,11 +66,11 @@ History Section
 }
 
 #historyHeading{
-    font-size: 50px;
+    font-size: 60px;
 }
 
 #historyContent{
-    display: flex;
+    flex-direction: row;
     font-size: 30px;
 }
 
@@ -84,12 +82,17 @@ Martial Arts Selector Section
     background-color: #1E79B3;
     color: #FFCC12;
     font-size: 25px;
+    width: 100%;
 }
 
 .pic{
     display: none;
-    height: 75px;
-    width: 50px;
+    height: 50%;
+    width: 50%;
+}
+
+#pictures, #topTen{
+    flex-direction: row;
 }
 
 /* 
@@ -97,16 +100,71 @@ Favorite Fighters Section
 */
 
 #famousFighters{
-    background-color: #B3B142;    
+    background-color: #B3B142;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;  
+}
+
+#fighterCard{
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
 }
 
 .famous{
-    width: 18vw;
+    width: 19vw;
     height: 25%;
 }
 
 .topFive{
     width: 20%;
-    position: relative;
-    clear: both;
+}
+
+/* 
+Chuck Norris API Joke Bin
+*/
+
+#chuckJoke{
+    background-color:#B33030;
+    width: 100%;
+}
+
+/* 
+Media Queries 
+*/
+
+@media all and (max-width: 800px) {
+    *{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #historyContent{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #popularMartialArts, #famousFighters, .navItems, #header, #nav{
+        width: 100%;
+    }
+    #timelinePicture{
+        width: 100%;
+    }
+    #fighterCard{
+        flex-direction: column;
+        width: 100%;
+    }
+    .famous{
+        width: 75vw;
+        height: 50%;
+    }
+    .pic, {
+        width: 100vw;
+    }
+    #topFive + table{
+        width: 100%;
+    }
 }

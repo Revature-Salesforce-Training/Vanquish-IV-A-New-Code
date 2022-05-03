@@ -1,5 +1,5 @@
 //    Author: Carl Tullis
-// Last Updated: 4/29/2022
+// Last Updated: 5/3/2022
 // Description: P0 project JavaScript
 
 
@@ -150,12 +150,26 @@ function pickJujutsu(){
 
 //Chuck Norris Fetch API
 
-// document.querySelector('#jokeBtn').addEventListener('click', fetchJoke);
+// let jokeBtn = document.querySelector('#jokeBtn');
+// let jokeBin = document.querySelector('#jokeBin');
 
-// function fetchJoke(category) {
-//     fetch(`https://api.chucknorris.io/jokes/random?category=${category}`);
-//     .then(r => r.json())
-//     .then(res => console.log(res.value));
+// jokeBtn.addEventListener('click', jokeBtn);
 
+// async function jokeBin(){
 
-//   }
+//     let fetchdata = await fetch('https://api.chucknorris.io/jokes/random');
+//     let parsedFetchData = await fetchdata.json();
+//     let p = document.createElement('p');
+//     p.src = parsedFetchData.message;
+//     results.appendChild(p);
+// }
+
+// fetch ('https://api.chucknorris.io/jokes/random')
+// 	.then(response => 
+//         response.json())
+// 	.then(response => 
+//         console.log(response))
+// 	.catch(err => 
+//         console.error(err))
+//     let p = document.createElement('p');
+    // p.src = err.value;
