@@ -1,0 +1,67 @@
+
+
+* {
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+.GrayBackground {
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    justify-content: space-between;
+
+}
+
+
+.FlexBox4 {
+    display: flex;
+    flex-wrap: wrap;          
+}
+
+.order {
+    height: 150vh;
+    flex-grow: 1;
+    flex-shrink: 1;             
+    flex-basis: 50%;            /*Specify two items per row*/      /* */
+}
+
+.ol {
+    background-color: blue;
+}
+
+ul {
+    background-color: brown;
+}
+
+.buttonNext {
+    /* display: flex;
+    flex-wrap: wrap;
+    align-item: right; */
+    align-self: center;
+    color:aqua;
+}
+
+.space {
+    width: 600px;
+}
+
+.theJoke{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    align-self: center;
+}
+
+
+#RevLogo {
+    height: 500%;
+    width: 500px;
+    border: 10px solid black;
+    border-radius: 50px;
+}

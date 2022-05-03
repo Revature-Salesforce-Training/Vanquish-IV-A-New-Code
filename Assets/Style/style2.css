@@ -1,0 +1,69 @@
+
+/* Highlight of text using span */
+.textHighlight {
+    font-weight: bold;
+    color: #8400ff;
+}
+
+/* I downloaded three random images with varying sizes, which is why i resized them to be of identical size */
+.imgTechnology {                   
+    height: 150px;
+    width: 150px;
+    
+}
+
+#HTML {
+    height: 105vh;
+    width: 50wh;
+    background-color: #c75353;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#htmlButton {
+    color: white;
+    scroll-behavior: smooth;
+    padding: 30px;          
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #be6c6c;
+}
+
+#CSS {
+    height: 105vh;
+    width: 50wh;
+    background-color: #4B7BE5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+/* Image used to describe the box model */
+#imgCSS {
+    padding:50px;
+    border: 7px;
+    border-style: dashed;
+    border-color: #D47AE8;
+    margin: 50px;
+    background: aqua;
+    background-clip: content-box;
+    box-shadow: inset 0 0 0 50px white;
+}
+
+#JS {
+    height: 105vh;
+    width: 50wh;
+    background-color: #FFD36E;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
