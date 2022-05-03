@@ -2,7 +2,6 @@
 // Last Updated: 5/3/2022
 // Description: P0 project JavaScript
 
-
 //Martial Art Selector Program
 
 const karate = document.querySelector('#karatePic');
@@ -155,7 +154,6 @@ let jokeBtn = document.querySelector('#jokeBtn')
 jokeBtn.addEventListener('click', makeJoke);
 
 async function makeJoke(){
-
     let category = document.querySelector('#search').value;
     let fetchdata = await fetch(`https://api.chucknorris.io/jokes/random?category=${category}`);
     let parsedFetchData = await fetchdata.json();
