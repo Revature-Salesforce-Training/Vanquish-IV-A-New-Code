@@ -1,0 +1,28 @@
+Salesforce-Project0
+1-Introduction : Salesforce Project0- Customize App
+2-A Front-End design, a Responsive  API for users' services for pet lovers: Show-Room presentations, adoption, others
+4- Important points about the use of innovation technology and systems: Cloud Technology
+Proccess Request-Server=>Network
+Request/Event:Fetch, manage event=> Network
+Process : Browser =>Network
+3-Definitons about the technology, systems, languages(eg, JS: advancement,quality, efficience)
+
+5. Summary
+HTML : Basics structures(head, body), links(main.css, main.js),
+CSS: Stylesheet, layout features(colors, position, margin, etc.)
+JS: Important control features, applied functionalities, methods(fetch, await, aync)
+ Example  Functions
+async function start() {
+    const response = await fetch("https://dog.ceo/api/breeds/list/all")
+    const data = await response.json()
+    createBreedList(data.message)
+SDLC Practices: Scrunban & Kanban board-GitHub
+SDLC best practices applied such as:Design,Customize Implementation, Analize, Testing(Chrome, CS tools), Debug.
+Scruban: detail information of phases, such as definiton, development, result.
+What I doing: Gathering resources, and organize, working out resources.
+What I did: Design a responsive API for users services for pet lovers, workout systems and technology resources.
+Block: Some incompatibility systems such as Web browser view, common bugs,others.
+
+Implements: HTML-async/await, CSS-slideshow(automation), static img,
+selectors
+Json libraries
