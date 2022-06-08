@@ -1,0 +1,48 @@
+<apex:page standardController="Store_Product__c" recordSetVar="store_products__c" lightningStylesheets="true" >
+<apex:form >
+<apex:pageBlock title="Store Products" id="Store_Products_List">
+Filter:
+<apex:selectList value="{! filterId }" size="1">
+    <apex:selectOptions value="{! listViewOptions }"/>
+    <apex:actionSupport event="onchange" reRender="Store_Products_List"/>
+</apex:selectList>
+    <apex:pageBlockTable value="{!Store_Products__c}" var="sp">
+        <apex:column value="{!sp.Name}"/>
+        <apex:column value="{!sp.Brand__c}"/>
+        <apex:column value="{!sp.Price__c}"/>
+        <apex:column value="{!sp.Type__c}"/>
+    </apex:pageBlockTable>
+<!-- Pagination -->
+<table style="width: 100%"><tr>
+    <td>
+    Page: <apex:outputText value=" {!PageNumber} of {! CEILING(ResultSize / PageSize) }"/>
+    </td>
+    <td align="center">
+<!-- Previous page -->
+<!-- active -->
+<apex:commandLink action="{! Previous }" value="« Previous"
+     rendered="{! HasPrevious }"/>
+<!-- inactive (no earlier pages) -->
+<apex:outputText style="color: #ccc;" value="« Previous"
+     rendered="{! NOT(HasPrevious) }"/>
+&nbsp;&nbsp;
+<!-- Next page -->
+<!-- active -->
+<apex:commandLink action="{! Next }" value="Next »"
+     rendered="{! HasNext }"/>
+<!-- inactive (no more pages) -->
+<apex:outputText style="color: #ccc;" value="Next »"
+     rendered="{! NOT(HasNext) }"/>
+    </td>
+    <td align="right">
+Records per page:
+<apex:selectList value="{! PageSize }" size="1">
+    <apex:selectOption itemValue="5" itemLabel="5"/>
+    <apex:selectOption itemValue="20" itemLabel="20"/>
+    <apex:actionSupport event="onchange" reRender="Store_Products_List"/>
+</apex:selectList>
+    </td>
+</tr></table>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

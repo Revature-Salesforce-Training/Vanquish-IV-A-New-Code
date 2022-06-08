@@ -1,0 +1,65 @@
+<!--
+Name: My Gematria Page
+Author: Alex
+Creation date: 2022/6/6
+Last modified: 2022/6/6
+
+A specialized tab for viewing and updating gematria via the name fields.
+
+-->
+
+<apex:page standardController="Contact" extensions="MyGematriaExtension" recordSetVar="Cata" lightningStylesheets="true">
+    <!--    -->
+    
+    <apex:slds />
+    <div class="slds-scope">
+        
+        <!--  A few useful links.  -->
+        <apex:form >
+            <button class="slds-button slds-button_neutral">
+                <apex:outputLink value="https://propheticnumbers.com/" id="theLink">Prophetic Numbers</apex:outputLink>
+            </button>
+            <button class="slds-button slds-button_inverse">
+                <apex:outputLink value="https://www.gematrix.org/" id="theLink2">Gematria Calculator</apex:outputLink>
+            </button>
+            <button class="slds-button slds-button_destructable">
+                <apex:outputLink value="https://www.hermetic-academy.com/gematria-the-secret-of-numerology-and-number-symbolism/" id="theLink4">Hermetic Academy</apex:outputLink>
+            </button>
+            
+
+            
+            
+            <!--  Our table https://www.youtube.com/watch?v=FcZd305VI60 -->
+            <apex:pageBlock >
+                <apex:pageBlockTable value="{!records}" var="Cata1" id="refreshableTable">
+                    <apex:column headerValue="Salutation">
+                            <apex:outputField value="{!Cata1.Salutation}">
+                                <apex:inlineEditSupport showOnEdit="updateRecords"/>
+                            </apex:outputField>
+                    </apex:column>
+                    <apex:column headerValue="First Name">
+                            <apex:outputField value="{!Cata1.FirstName}">
+                                <apex:inlineEditSupport showOnEdit="updateRecords"/>
+                            </apex:outputField>
+                    </apex:column>
+                   <apex:column headerValue="Last Name">
+                            <apex:outputField value="{!Cata1.LastName}">
+                                <apex:inlineEditSupport showOnEdit="updateRecords"/>
+                            </apex:outputField> 
+                    </apex:column>  
+                    <apex:column headerValue="Gematria Value">
+                            <apex:outputField value="{!Cata1.Gematria_Value__c}">
+                            </apex:outputField> 
+                    </apex:column> 
+                </apex:pageBlockTable>
+            </apex:pageBlock>
+        
+            <!--  The nav buttons.  -->
+            <apex:commandButton reRender="refreshableTable" value="Previous" action="{!previous}"/>
+            <apex:commandButton reRender="refreshableTable" value="Next" action="{!next}"/>
+            <apex:commandButton reRender="refreshableTable" value="Update Records" action="{!quicksave}" style="display:none" id="updateRecords"/>
+
+
+        </apex:form>
+    </div>
+</apex:page>

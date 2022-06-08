@@ -1,0 +1,57 @@
+<!--
+Name: Home Page
+Author: Kory Iwahashi
+Creation Date: 6/04/22
+Last Modified: 6/07/22
+
+The Home Page for our Experience Cloud
+
+-->
+
+<apex:page >
+    <!-- CSS Static Resource -->
+<apex:stylesheet value="{!$Resource.Styles}"/>
+<apex:slds />
+    <!-- Navbar and its links -->
+<div class="navbar-custom slds-grid slds-gutters" >
+    <div class="slds-col slds-size_2-of-4" >
+    <a class="logo" href="www.google.com" >
+        <apex:image url="{!$Resource.Logo}" height="45" width="45" />
+    </a>
+    </div>
+	<div class="navbar-pages slds-col" >
+    <a class="" >
+        Home
+    </a> 
+    </div>
+	<div class="navbar-pages slds-col" >
+    <a class="" >
+        About
+    </a>  
+    </div>
+    <div class="navbar-pages slds-col dropdown">
+  		<button class="dropbtn">Products</button>
+  		<div class="dropdown-content">
+    		<a href="#">Appliances</a>
+    		<a href="#">Furniture</a>
+    		<a href="#">Decor</a>
+            <a href="#">Tools</a>
+  		</div>
+	</div>
+    <div class="navbar-pages slds-col" >
+    <a class="" >
+        Contact
+    </a> 
+    </div>
+</div>
+    
+<div class="section1" >
+<h1>
+Sign up for our Rewards Club today and get up to 25% off your next purchase!
+</h1>
+    <button>
+        GET STARTED
+    </button>
+</div>
+<apex:includeScript value="{!$Resource.Javascript}"/>
+</apex:page>

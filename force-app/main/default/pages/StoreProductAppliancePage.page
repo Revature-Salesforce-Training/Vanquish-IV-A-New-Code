@@ -1,0 +1,28 @@
+<apex:page controller="ApplianceController" lightningStylesheets="true">
+    <h1>
+        Welcome to the Appliance Visualforce page!
+    </h1>   
+    <apex:form >
+    <apex:selectList value="{!selectedF}" size="1">
+        <apex:selectOption itemValue="name" itemlabel="Name"/>
+        <apex:selectOption itemValue="type" itemlabel="Type"/>
+        <apex:selectOption itemValue="brand" itemlabel="Brand"/>
+        <apex:selectOption itemValue="price" itemlabel="Price"/>
+    </apex:selectList>
+    <apex:inputText value="{!filterval}">  Filter:  </apex:inputText>        
+    <apex:commandButton value="Filter" action="{!filter}" reRender="applist"/>
+    <apex:commandButton value="Clear Filter" action="{!clear}" reRender="applist"/>
+    <apex:pageBlock id="applist">
+        <apex:pageBlockTable value="{!product}" var="app" rows="5">
+            <apex:column value="{!app.name}"/>
+            <apex:column value="{!app.Type__c}"/>
+            <apex:column value="{!app.Brand__c}"/>
+            <apex:column value="{!app.Price__c}"/>
+        </apex:pageBlockTable>  
+        <apex:pageblockbuttons >
+            <apex:commandButton value="Next Page" action="{!next}" reRender="applist"/>
+            <apex:commandButton value="Previous Page" action="{!previous}" reRender="applist"/>
+        </apex:pageblockbuttons>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

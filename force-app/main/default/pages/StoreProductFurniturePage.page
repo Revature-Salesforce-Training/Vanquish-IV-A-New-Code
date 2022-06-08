@@ -1,0 +1,28 @@
+<apex:page controller="FurnitureController" lightningStylesheets="true">
+    <h1>
+        Welcome to the Furniture Visualforce page!
+    </h1>   
+    <apex:form >
+    <apex:selectList value="{!selectedF}" size="1">
+        <apex:selectOption itemValue="name" itemlabel="Name"/>
+        <apex:selectOption itemValue="type" itemlabel="Type"/>
+        <apex:selectOption itemValue="brand" itemlabel="Brand"/>
+        <apex:selectOption itemValue="price" itemlabel="Price"/>
+    </apex:selectList>
+    <apex:inputText value="{!filterval}">  Filter:  </apex:inputText>        
+    <apex:commandButton value="Filter" action="{!filter}" reRender="furnlist"/>
+    <apex:commandButton value="Clear Filter" action="{!clear}" reRender="furnlist"/>
+    <apex:pageBlock id="furnlist">
+        <apex:pageBlockTable value="{!product}" var="furns" rows="5">
+            <apex:column value="{!furns.name}"/>
+            <apex:column value="{!furns.Type__c}"/>
+            <apex:column value="{!furns.Brand__c}"/>
+            <apex:column value="{!furns.Price__c}"/>
+        </apex:pageBlockTable>  
+        <apex:pageblockbuttons >
+            <apex:commandButton value="Next Page" action="{!next}" reRender="furnlist"/>
+            <apex:commandButton value="Previous Page" action="{!previous}" reRender="furnlist"/>
+        </apex:pageblockbuttons>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>
