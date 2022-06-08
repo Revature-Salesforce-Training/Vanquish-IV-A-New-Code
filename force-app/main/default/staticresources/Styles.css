@@ -11,6 +11,13 @@ h1{
     background-color: aquamarine;
     font-family: 'Bebas Neue';
     padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 103%;
+}
+
+.navbar-custom .slds-scope .slds-gutters {
+  margin-left: .75rem;
 }
 
 .logo{
@@ -88,7 +95,7 @@ h1{
     text-align: center;
     padding: 15rem;
     font-size: xx-large;
-    outline-color: #eba55ffd;
+
 
 }
 
@@ -113,4 +120,81 @@ h1{
   
 
 
+}
+
+/* ----------------------About Page------------------------------- */
+
+.Title{
+  background-image: url('https://playful-shark-gnhq82-dev-ed--c.visualforce.com/resource/1654564355000/Homepage_Image?');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 3rem;
+  margin-top: 3.5rem;
+  font-size: xx-large;
+  color: white;
+}
+
+.Title .aboutTitle{
+  font-family: 'Rubik', sans-serif;
+}
+
+.aboutDiv {
+
+  background-color: #FFE5B4;
+  font-size: medium;
+  color: black;
+  font-family: 'Rubik', sans-serif;
+  padding: 4rem;
+
+
+}
+
+.aboutDiv .aboutSummary {
+  font-family: 'Rubik', sans-serif;
+  background-color: #FFE5B4;
+  text-align: left;
+  /* margin-left: 10rem;
+  margin-right: 10rem; */
+  margin-bottom: 4rem;
+  line-height: 2;
+  letter-spacing: 4px;
+
+}
+
+.aboutImage {
+  text-align: center;
+  display: inline-block;
+  /* margin-left: 4rem;
+  margin-right: 4rem; */
+  margin-bottom: 4rem;
+
+}
+
+/* --------------------Products----------------------------- */
+
+
+.productDiv{
+  background-color: #FAD4D4;
+  font-family: 'Rubik', sans-serif;
+  font-size: medium;
+  padding: 4rem;
+}
+
+.productDiv .productWelcome{
+  font-family: 'Rubik', sans-serif;
+  font-size: x-large;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+/* -------------------Contact------------------------------- */
+
+.contactDiv{
+  background-color: #FFE5B4;
+  font-family: 'Rubik', sans-serif;
+  font-size: medium;
+  padding: 4rem;
+  text-align: center;
 }

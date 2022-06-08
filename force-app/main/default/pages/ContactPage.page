@@ -1,7 +1,43 @@
-<apex:page controller="ContactPageController" lightningStylesheets="true" showHeader="false">
-
-<apex:slds />
-<apex:sectionHeader title="Contact Page" subtitle="Furniture Central"/>
+<apex:page controller="ContactPageController" showHeader="false" lightningStylesheets="true" >
+    <apex:stylesheet value="{!$Resource.Styles}"/>
+	<apex:slds />
+	<div class="navbar-custom slds-grid slds-gutters" >
+    	<div class="slds-col slds-size_2-of-4" >
+    	<a class="logo" href="{!$Page.homePage}" >
+        	<apex:image url="{!$Resource.Logo}" height="45" width="45" />
+    	</a>
+    	</div>
+		<div class="navbar-pages slds-col" >
+    	<a class="" href="{!$Page.homePage}" >
+        	Home
+    	</a> 
+    	</div>
+		<div class="navbar-pages slds-col" >
+    	<a class="" href="{!$Page.aboutPage}" >
+        	About
+    	</a>  
+    	</div>
+    	<div class="navbar-pages slds-col dropdown">
+  			<button class="dropbtn">Products</button>
+  			<div class="dropdown-content">
+    			<a href="{!$Page.StoreProductAppliancePage}">Appliances</a>
+    			<a href="{!$Page.StoreProductFurniturePage}">Furniture</a>
+    			<a href="{!$Page.StoreProductDecorPage}">Decor</a>
+            	<a href="{!$Page.StoreProductToolPage}">Tools</a>
+  			</div>
+		</div>
+    	<div class="navbar-pages slds-col" >
+    	<a class="" href="{!$Page.ContactPage}" >
+        	Contact
+    	</a> 
+    	</div>
+	</div>
+    <div class="Title" >
+ 		<h1 class="aboutTitle" >
+            Contact
+        </h1>
+    </div>
+<!-- <apex:sectionHeader title="Contact Page" subtitle="Furniture Central"/> -->
 
 <!--    
 <apex:form >
@@ -11,9 +47,9 @@
 </apex:form>    Redirect buttons are not needed as we use tabs inside Experience cloud
 -->
     
-<div>
+<div class="contactDiv" >
   <apex:form >
-      <apex:image url="{!$Resource.ContactUsPicture}" width="500" height="500"/>
+    <!--  <apex:image url="{!$Resource.ContactUsPicture}" width="500" height="500"/> -->
       <apex:pageMessages /> <!-- Success/Error Messages are inserted here -->
       <apex:pageBlock title="Give us some info so the right person can get back to you (Create an internal task)">
       <!-- <apex:pageBlockButtons >
@@ -36,7 +72,7 @@
 </div>
 
     
-<div>
+<div class="contactDiv" >
     <apex:form >
         <!-- <apex:image url="{!URLFOR($Resource.P2_FirstUpload,'FurnitureRepair.jpg')}" width="500" height="500" />	-->
         <apex:pageBlock title="Or leave us a comment (Web-to-Case)">

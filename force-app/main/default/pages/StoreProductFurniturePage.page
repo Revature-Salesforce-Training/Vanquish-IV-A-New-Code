@@ -1,5 +1,44 @@
-<apex:page controller="FurnitureController" lightningStylesheets="true">
-    <h1>
+<apex:page controller="FurnitureController" lightningStylesheets="true" showHeader="false">
+        <apex:stylesheet value="{!$Resource.Styles}"/>
+	<apex:slds />
+	<div class="navbar-custom slds-grid slds-gutters" >
+    	<div class="slds-col slds-size_2-of-4" >
+    	<a class="logo" href="{!$Page.homePage}" >
+        	<apex:image url="{!$Resource.Logo}" height="45" width="45" />
+    	</a>
+    	</div>
+		<div class="navbar-pages slds-col" >
+    	<a class="" href="{!$Page.homePage}" >
+        	Home
+    	</a> 
+    	</div>
+		<div class="navbar-pages slds-col" >
+    	<a class="" href="{!$Page.aboutPage}" >
+        	About
+    	</a>  
+    	</div>
+    	<div class="navbar-pages slds-col dropdown">
+  			<button class="dropbtn">Products</button>
+  			<div class="dropdown-content">
+    			<a href="{!$Page.StoreProductAppliancePage}">Appliances</a>
+    			<a href="{!$Page.StoreProductFurniturePage}">Furniture</a>
+    			<a href="{!$Page.StoreProductDecorPage}">Decor</a>
+            	<a href="{!$Page.StoreProductToolPage}">Tools</a>
+  			</div>
+		</div>
+    	<div class="navbar-pages slds-col" >
+    	<a class="" href="{!$Page.ContactPage}" >
+        	Contact
+    	</a> 
+    	</div>
+	</div>
+    <div class="Title" >
+ 		<h1 class="aboutTitle" >
+            Furniture
+        </h1>
+    </div>
+    <div class="productDiv" >
+    <h1 class="productWelcome" >
         Welcome to the Furniture Visualforce page!
     </h1>   
     <apex:form >
@@ -25,4 +64,6 @@
         </apex:pageblockbuttons>
     </apex:pageBlock>
     </apex:form>
+    </div>
+    
 </apex:page>
