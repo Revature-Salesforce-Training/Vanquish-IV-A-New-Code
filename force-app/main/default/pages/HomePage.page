@@ -1,0 +1,16 @@
+<apex:page standardController="Music_Product__c" recordSetVar="Mps" lightningStylesheets="true">
+<apex:slds />
+    <div>
+        <h1>
+            Header
+        </h1>
+    </div>
+    <apex:pageBlock title="Music Products">
+        <apex:pageBlockTable value="{!Mps}" var="Mp" >
+            <apex:column value="{!Mp.Name}"/>
+            <apex:column value="{!Mp.Price__c}"/>
+            <apex:column value="{!Mp.Brand__c}"/>
+            <apex:column value="{!Mp.Product_Type__c}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

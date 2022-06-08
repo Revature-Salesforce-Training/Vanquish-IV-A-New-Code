@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Web to Lead</title>
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit your inquiry!</title>
+</head>
+<body>
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+    <input type=hidden name="oid" value="00DIY000000CGxf">
+    <input type=hidden name="retURL" value="http://127.0.0.1:5500/index2.html">
+    
+    <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+    
+    <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+    
+    <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+    
+    <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+    
+    <label for="street">Street</label><textarea name="street"></textarea><br>
+    
+    <label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+    
+    <label for="state">State/Province</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
+    
+    <label for="zip">Zip</label><input  id="zip" maxlength="20" name="zip" size="20" type="text" /><br>
+    
+    Product Interest:<select  id="00NIY000000iuKc" name="00NIY000000iuKc" title="Product Interest"><option value="">--None--</option><option value="Music Product Purchase">Music Product Purchase</option>
+    <option value="Guitar Repair">Guitar Repair</option>
+    <option value="Bass Repair">Bass Repair</option>
+    <option value="Drum Repair">Drum Repair</option>
+    <option value="Piano/Synth Repair">Piano/Synth Repair</option>
+    <option value="Ukulele Repair">Ukulele Repair</option>
+    <option value="Speaker Repair">Speaker Repair</option>
+    <option value="Amp Repair">Amp Repair</option>
+    </select><br>
+    
+    <label for="description">Description</label><textarea name="description"></textarea><br>
+    
+    <input type="submit" name="submit">
+    
+    </form>
+    
+        
+</body>
+</html>

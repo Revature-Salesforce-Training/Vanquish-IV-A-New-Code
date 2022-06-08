@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web to Case</title>
+</head>
+<body>
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+        <input type=hidden name="orgid" value="00DIY000000CGxf">
+        <input type=hidden name="retURL" value="http://www.google.com">
+               
+        <label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+        
+        <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+        
+        <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+        
+        <label for="type">Type</label><select  id="type" name="type"><option value="">--None--</option><option value="Troubleshooting">Troubleshooting</option>
+        <option value="Warranty">Warranty</option>
+        <option value="Complaint">Complaint</option>
+        <option value="Malfunction">Malfunction</option>
+        <option value="Product Defect">Product Defect</option>
+        <option value="Other">Other</option>
+        </select><br>
+        
+        <label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+        
+        <input type="submit" name="submit">
+        
+        </form>
+        
+</body>
+</html>
+
+
+
+
+
+
+    
