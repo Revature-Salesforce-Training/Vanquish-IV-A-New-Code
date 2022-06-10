@@ -1,7 +1,7 @@
 //Created by Kathryn Olsen
 //AccountTrigger_Helper
 //Created 6/4/22
-//Last Updated 6/8/22
+//Last Updated 6/7/22
 //Account Trigger Helper that holds the logic for the Trigger
 
 //instantiates the class AccountTrigger Helper
