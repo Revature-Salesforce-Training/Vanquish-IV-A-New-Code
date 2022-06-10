@@ -4,7 +4,7 @@
 //Last Updated 6/8/22
 //Account Trigger Helper that holds the logic for the Trigger
 
-//instantiates the class
+//instantiates the class AccountTrigger Helper
 public class AccountTrigger_Helper {
     public static void accountMethod(List<Account> accList)  {
 	    //public static, returning a void method (accountMethod) that will pass the List of Accounts, called accList
