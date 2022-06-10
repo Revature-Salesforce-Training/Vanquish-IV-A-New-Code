@@ -1,5 +1,14 @@
+<!--
+Name: Account Display Page
+Author: Kathryn Olsen
+Creation Date: 6/04/22
+Last Modified: 6/07/22
+
+A page that displays the account names, account numbers, and billing and shipping states.
+
+-->
+
 <apex:page controller="StandardAccountDisplayController" lightningStylesheets="true"> 
-    <!-- Kathryn Olsen -->
     <apex:pageBlock title="Account List with Billing and Shipping States"> 
         <apex:pageBlockTable value="{!records}" var="record"> 
             <apex:column > 
