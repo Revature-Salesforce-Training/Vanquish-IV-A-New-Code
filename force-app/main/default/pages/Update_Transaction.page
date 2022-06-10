@@ -1,0 +1,21 @@
+<!-- Transaction Visualforce Page
+     Kory Iwahashi
+     Created: 6/2/22
+     Last Modified: 
+-->
+<apex:page standardController="Transaction__c" >
+      <apex:form >
+      <apex:pageBlock title="Update Transaction">
+        <!--Buttons -->
+         <apex:pageBlockButtons >
+            <apex:commandButton action="{!save}" value="Save"/>
+         </apex:pageBlockButtons>
+         <!--Input form -->
+         <apex:pageBlockSection columns="1">
+         <apex:inputField value="{!Transaction__c.Name}"/>
+         <apex:inputField value="{!Transaction__c.Date_Time__c}"/>
+         <apex:inputField value="{!Transaction__c.Total__c}"/>
+        </apex:pageBlockSection>
+      </apex:pageBlock>
+      </apex:form>
+</apex:page>

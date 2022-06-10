@@ -1,0 +1,68 @@
+<!--
+Name: Home Page
+Author: Kory Iwahashi
+Creation Date: 6/04/22
+Last Modified: 6/07/22
+
+The About Page for our Experience Cloud
+
+-->
+<!-- showHeader false removes prestyling. Apex stylesheet utilizes the css added as static resource -->
+
+<apex:page showHeader="false" >
+    <apex:stylesheet value="{!$Resource.Styles}"/>
+	<apex:slds />
+	<div class="navbar-custom slds-grid slds-gutters" >
+    	<div class="slds-col slds-size_2-of-4" >
+    	<a class="logo" href="{!$Page.homePage}" >
+        	<apex:image url="{!$Resource.Logo}" height="45" width="45" />
+    	</a>
+    	</div>
+		<div class="navbar-pages slds-col" >
+    	<a class="" href="{!$Page.homePage}" >
+        	Home
+    	</a> 
+    	</div>
+		<div class="navbar-pages slds-col" >
+    	<a class="" href="{!$Page.aboutPage}" >
+        	About
+    	</a>  
+    	</div>
+        <!-- Dropdown menu with links to record type pages -->
+    	<div class="navbar-pages slds-col dropdown">
+  			<button class="dropbtn">Products</button>
+  			<div class="dropdown-content">
+    			<a href="{!$Page.StoreProductAppliancePage}">Appliances</a>
+    			<a href="{!$Page.StoreProductFurniturePage}">Furniture</a>
+    			<a href="{!$Page.StoreProductDecorPage}">Decor</a>
+            	<a href="{!$Page.StoreProductToolPage}">Tools</a>
+  			</div>
+		</div>
+    	<div class="navbar-pages slds-col" >
+    	<a class="" href="{!$Page.ContactPage}" >
+        	Contact
+    	</a> 
+    	</div>
+	</div>
+    <div class="Title" >
+ 		<h1 class="aboutTitle" >
+            About Yury's Depot
+        </h1>
+    </div>
+    <!-- About Section -->
+    <div class="aboutDiv slds-grid slds-gutters">
+        <p class="aboutSummary slds-col slds-size_2-of-4" >
+            We started from humble roots over 10 years ago when Yury sold his 
+            first vintage dresser back in 2009 to his next door neighbor. Since then
+            we have expanded our business beyond the borders of our small warehouse to meet the needs
+            of the local tri-state area, and now offer a variety of products beyond vintage furniture like appliances
+            and decor. Under our great leadership, we continue to provide the best quality products and service for great
+            affordable prices. 
+        </p>
+        <!-- Reference image through static resource -->
+    <div class="aboutImage slds-col slds-size_2-of-4" >
+    	<apex:image url="{!$Resource.About_Image}" height="1000" width="350" />    
+    </div>
+ 
+    </div>
+</apex:page>

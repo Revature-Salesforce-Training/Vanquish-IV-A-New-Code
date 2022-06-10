@@ -1,0 +1,35 @@
+<!--
+Name: Store Product Display
+Author: Kory Iwahashi
+Created: 06/06/22
+Last Modified: 06/07/22
+
+Store Products List that displays all products available with all fields in view
+
+-->
+<!-- Visualforce page setup with a custom controller-->
+
+<apex:page controller="StoreProductDisplayController" lightningStylesheets="true"> 
+    <apex:pageBlock title="Store Product List">
+        
+        <!-- Table that will display list of store products with corresponding fields-->
+        <apex:pageBlockTable value="{!records}" var="record"> 
+            <apex:column > 
+                <apex:facet name="header">Store Product Name</apex:facet> 
+                <apex:outputText value="{!record.Name}"/> 
+            </apex:column> 
+            <apex:column > 
+                <apex:facet name="header">Type</apex:facet> 
+                <apex:outputText value="{!record.Type__c}"/> 
+            </apex:column>
+            <apex:column > 
+                <apex:facet name="header">Price</apex:facet> 
+                <apex:outputText value="{!record.Price__c}"/> 
+            </apex:column>
+            <apex:column > 
+                <apex:facet name="header">Brand</apex:facet> 
+                <apex:outputText value="{!record.Brand__c}"/> 
+            </apex:column>
+        </apex:pageBlockTable> 
+    </apex:pageBlock> 
+</apex:page>

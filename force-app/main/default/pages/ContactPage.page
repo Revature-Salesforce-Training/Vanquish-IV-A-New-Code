@@ -1,0 +1,103 @@
+<!--
+Name of the file: ContactPage
+Name: Yury Pushkarev
+Created date: 06/05/22
+Last modified date: 06/09/22
+Overview: Visualforce page designed to hold 
+-->
+<apex:page controller="ContactPageController" showHeader="false" lightningStylesheets="true" >
+<!--Styling added by Kory start -->
+    <apex:stylesheet value="{!$Resource.Styles}"/>
+	<apex:slds />
+	<div class="navbar-custom slds-grid slds-gutters" >
+    	<div class="slds-col slds-size_2-of-4" >
+    	<a class="logo" href="{!$Page.homePage}" >
+        	<apex:image url="{!$Resource.Logo}" height="45" width="45" />
+    	</a>
+    	</div>
+		<div class="navbar-pages slds-col" >
+    	<a class="" href="{!$Page.homePage}" >
+        	Home
+    	</a> 
+    	</div>
+		<div class="navbar-pages slds-col" >
+    	<a class="" href="{!$Page.aboutPage}" >
+        	About
+    	</a>  
+    	</div>
+    	<div class="navbar-pages slds-col dropdown">
+  			<button class="dropbtn">Products</button>
+  			<div class="dropdown-content">
+    			<a href="{!$Page.StoreProductAppliancePage}">Appliances</a>
+    			<a href="{!$Page.StoreProductFurniturePage}">Furniture</a>
+    			<a href="{!$Page.StoreProductDecorPage}">Decor</a>
+            	<a href="{!$Page.StoreProductToolPage}">Tools</a>
+  			</div>
+		</div>
+    	<div class="navbar-pages slds-col" >
+    	<a class="" href="{!$Page.ContactPage}" >
+        	Contact
+    	</a> 
+    	</div>
+	</div>
+    <div class="Title" >
+ 		<h1 class="aboutTitle" >
+            Contact
+        </h1>
+    </div>
+<!-- Styling added by Kory /ends -->
+    
+   
+<!-- Yury Pushkarev Contact page starts here --> 
+<div class="contactDiv" >
+  <apex:form >
+      <apex:pageMessages /> <!-- Success/Error Messages are inserted here -->
+      <apex:pageBlock title="Give us some info so the right person can get back to you (Create an internal task)">
+      <apex:pageBlockSection showHeader="false" columns="1">
+        <!-- Below values are used to generate a new Task-->
+        <!-- callUs method can be found within ContactPageController and is called upon the click of below commandButton
+			 It is connected to Activities (custom fields were created against Activity object as per outlined requirements of the Wireframe) and Task standard objects-->
+        <apex:inputField value="{!callUs.First_Name__c}" />
+        <apex:inputField value="{!callUs.Last_Name__c}" />
+        <apex:inputField value="{!callUs.Email__c}" />
+        <apex:inputField value="{!callUs.Phone_Number__c}" />
+        <apex:inputField value="{!callUs.subject}" />
+        <apex:inputField value="{!callUs.status}" />
+        <apex:inputField value="{!callUs.priority}" />
+        <apex:inputField value="{!callUs.ActivityDate}" />
+        <apex:inputField value="{!callUs.description}" />
+        <!-- Because it is a custom controller, save button logic is contained within the ContactPageController and it attempts to insert a new task-->
+        <apex:commandButton action="{!save}" value="Save"/>
+      </apex:pageBlockSection>
+    </apex:pageBlock>
+  </apex:form>
+</div>
+
+    <!-- Below is system generated Web-to-Case message-->
+<div class="contactDiv" >
+    <apex:form >
+        <apex:pageBlock title="Or leave us a comment (Web-to-Case)">
+            <apex:pageBlockSection showHeader="false" columns="4">
+                            <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8"/>
+                            <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+                            <input type="hidden" name="orgid" value="00DIY000000JIxf"/>
+                            <input type="hidden" name="retURL" value="http://google.com"/>
+                            <label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br/>
+                            <label for="email">Email      </label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br/>
+                            <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br/>
+                            <label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br/>
+                            <label for="description">Description</label><textarea name="description"></textarea><br/>
+                            <label for="type">Type</label><select  id="type" name="type"><option value="">--None--</option><option value="Mechanical">Mechanical</option>
+                            <option value="Electrical">Electrical</option>
+                            <option value="Electronic">Electronic</option>
+                            <option value="Structural">Structural</option>
+                            <option value="Other">Other</option>
+                            </select><br/>
+                            <input type="hidden"  id="external" name="external" value="1" /><br/>
+                            <input type="submit" name="submit"/> 
+                            </form>
+              </apex:pageBlockSection>
+    </apex:pageBlock>
+    </apex:form>    
+</div>
+</apex:page>

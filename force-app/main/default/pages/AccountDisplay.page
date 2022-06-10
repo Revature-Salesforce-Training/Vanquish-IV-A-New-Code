@@ -1,0 +1,23 @@
+<apex:page controller="StandardAccountDisplayController" lightningStylesheets="true"> 
+    <!-- Kathryn Olsen -->
+    <apex:pageBlock title="Account List with Billing and Shipping States"> 
+        <apex:pageBlockTable value="{!records}" var="record"> 
+            <apex:column > 
+                <apex:facet name="header">Account Name</apex:facet> 
+                <apex:outputText value="{!record.Name}"/> 
+            </apex:column> 
+            <apex:column > 
+                <apex:facet name="header">Account Number</apex:facet> 
+                <apex:outputText value="{!record.AccountNumber}"/> 
+            </apex:column>
+            <apex:column > 
+                <apex:facet name="header">Billing State</apex:facet> 
+                <apex:outputText value="{!record.BillingState}"/> 
+            </apex:column>
+            <apex:column > 
+                <apex:facet name="header">Shipping State</apex:facet> 
+                <apex:outputText value="{!record.ShippingState}"/> 
+            </apex:column>
+        </apex:pageBlockTable> 
+    </apex:pageBlock> 
+</apex:page>

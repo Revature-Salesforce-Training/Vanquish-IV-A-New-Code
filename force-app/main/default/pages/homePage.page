@@ -1,0 +1,57 @@
+<!--
+Name: Home Page
+Author: Kory Iwahashi
+Creation Date: 6/04/22
+Last Modified: 6/07/22
+
+The Home Page for our Experience Cloud
+
+-->
+<!-- showHeader false removes prestyling. Apex stylesheet utilizes the css added as static resource -->
+<apex:page showHeader="false" >
+    <apex:stylesheet value="{!$Resource.Styles}"/>
+    <!-- Use slds and grid/column to make navbar responsive -->
+	<apex:slds />
+	<div class="navbar-custom slds-grid slds-gutters" >
+    	<div class="slds-col slds-size_2-of-4" >
+    	<a class="logo" href="{!$Page.homePage}" >
+        	<apex:image url="{!$Resource.Logo}" height="45" width="45" />
+    	</a>
+    	</div>
+		<div class="navbar-pages slds-col" >
+    	<a class="" href="{!$Page.homePage}" >
+        	Home
+    	</a> 
+    	</div>
+		<div class="navbar-pages slds-col" >
+    	<a class="" href="{!$Page.aboutPage}" >
+        	About
+    	</a>  
+    	</div>
+        <!-- Dropdown with links to record types -->
+    	<div class="navbar-pages slds-col dropdown">
+  			<button class="dropbtn">Products</button>
+  			<div class="dropdown-content">
+    			<a href="{!$Page.StoreProductAppliancePage}">Appliances</a>
+    			<a href="{!$Page.StoreProductFurniturePage}">Furniture</a>
+    			<a href="{!$Page.StoreProductDecorPage}">Decor</a>
+            	<a href="{!$Page.StoreProductToolPage}">Tools</a>
+  			</div>
+		</div>
+    	<div class="navbar-pages slds-col" >
+    	<a class="" href="{!$Page.ContactPage}" >
+        	Contact
+    	</a> 
+    	</div>
+	</div>
+    <!-- Section below navbar -->
+	<div class="section1" >
+	<h1 class="homeMessage" >
+   		Sign up for our Rewards Club today and get up to 25% off on your next purchase!
+	</h1>
+    <button class="homeButton" >
+        GET STARTED
+    </button>
+
+	</div>
+</apex:page>
